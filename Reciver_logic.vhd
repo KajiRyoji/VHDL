@@ -30,6 +30,7 @@ begin
                         flag <= '1';        -- TODO: add flag=0
                     elsif rxd = "0101" then -- "preambule"-value
                         a <= 15;
+                    else a<= 0;
                     end if;
 
                 elsif rxd = "0101" then -- "preambule"-value
